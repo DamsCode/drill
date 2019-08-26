@@ -37,15 +37,28 @@ body {
     margin-top: 20px;
 }
 
-.button:hover {
-    animation: example 1s;
+#hoverher:hover {
+    background-color: white;
 }
 
-@keyframes example {
-    0% {
-        background-color: black;
-    }
-    100% {
-        background-color: white;
-    }
+#hoverher {
+    transition: background-color 1s;
+}
+
+#DoNotTouchTheWidth {
+    transition: transform 1s, background-color 1s;
+}
+
+#DoNotTouchTheWidth:hover {
+    transform: scale(1.5, 1.5);
+    background-color: white;
+}
+
+#DontTouchTheMargin {
+    transition: transform 1s, background-color 1s;
+}
+
+#DontTouchTheMargin:hover {
+    transform: translateX(50px);
+    background-color: white;
 }
